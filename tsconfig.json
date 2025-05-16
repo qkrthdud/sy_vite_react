@@ -18,7 +18,14 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* 경로 설정 추가 */
+    "baseUrl": "src",  // 상대경로를 'src' 폴더를 기준으로 설정
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["Pages/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

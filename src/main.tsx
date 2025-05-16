@@ -9,6 +9,7 @@ import "swiper/css/navigation"; // 네비게이션 스타일
 import "swiper/css/pagination"; // 페이지네이션 스타일
 
 import "./scss/global.scss"
+import "./index.css"; //
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>

@@ -1,0 +1,234 @@
+/* src/styles/EventGame.scss */
+
+/* 공통 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #1e100a;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Noto Sans Korean', Malgun Gothic, "맑은 고딕", dotum, Sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+  &:visited {
+    color: #303030;
+  }
+  &:hover,
+  &:active {
+    color: #303030;
+  }
+}
+
+/* 레이아웃 스타일 */
+#wrap {
+  width: 100%;
+  min-width: 1200px;
+  height: 6600px;
+  background-color: #1e100a;
+  position: relative;
+  overflow: hidden;
+}
+
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+/* 오른쪽 네비게이션 스타일 */
+.right_nav {
+  position: fixed;
+  top: 300px;
+  right: 10px;
+  z-index: 4;
+
+  ul {
+    li {
+      width: 160px;
+      height: 50px;
+      background-color: rgba(136, 130, 142, 0.2);
+      color: #fff;
+      border: 1px solid #131213;
+      margin-bottom: 2px;
+      border-radius: 3px;
+
+      a {
+        width: 100%;
+        height: 100%;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        color: #fff;
+        font-size: 13px;
+      }
+
+      &:hover {
+        background-color: #483222;
+        border: 1px solid #1d1814;
+        border-radius: 3px;
+      }
+
+      &.active {
+        background-color: #483222;
+        border: 1px solid #1d1814;
+        border-radius: 3px;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* 이벤트 화면 스타일 */
+#container .event_01 {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* LampSet 스타일 */
+#container .event_01 .lamp_set {
+  width: 437px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 647px;
+  left: 50%;
+  margin-left: 194px;
+
+  div {
+    width: 22px;
+    height: 22px;
+    margin-right: 87px;
+    margin-bottom: 140px;
+    background-repeat: no-repeat;
+  }
+
+  .lamp_red {
+    background-image: url('/img/event/lamp_red.png');
+  }
+
+  .lamp_green {
+    background-image: url('/img/event/lamp_green.png');
+    position: relative;
+
+    .label {
+      width: 82px;
+      height: 57px;
+      background-image: url('/img/event/label_done.png');
+      position: absolute;
+      top: 40px;
+      left: -7px;
+    }
+  }
+}
+
+/* MonitorSet 스타일 */
+#container .event_01 .monitor_set {
+  width: 753px;
+  height: 681px;
+  position: absolute;
+  top: 619px;
+  left: 50%;
+  margin-left: -625px;
+
+  .win_01 {
+    background-image: url('/img/event/bg_win_01.png');
+    background-repeat: no-repeat;
+
+    .circle_bg {
+      width: 477px;
+      height: 477px;
+      background-image: url('/img/event/circle_bg.png');
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 99px;
+      left: 50%;
+
+    }
+
+    .rsp {
+      position: absolute;
+      top: 171px;
+      left: 50%;
+      margin-left: -134px;
+    }
+  }
+}
+
+/* ButtonSet 스타일 */
+#container .event_01 .btn_set {
+  position: absolute;
+  top: 1321px;
+  left: 50%;
+  margin-left: -420px;
+
+  .btn_start_light {
+    width: 229px;
+    height: 180px;
+    background-image: url('/img/event/btn_start_light.png');
+    background-repeat: no-repeat;
+  }
+
+  .btn_s_up {
+    width: 229px;
+    height: 180px;
+    background-image: url('/img/event/btn_s_up.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 320px;
+  }
+
+  .btn_r_up {
+    width: 229px;
+    height: 180px;
+    background-image: url('/img/event/btn_r_up.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 549px;
+  }
+
+  .btn_p_up {
+    width: 229px;
+    height: 180px;
+    background-image: url('/img/event/btn_p_up.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 778px;
+  }
+}

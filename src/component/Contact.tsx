@@ -17,10 +17,10 @@ const Contact: React.FC<ContactProps> = ({ id, cls }) => {
         {/* 이메일 & SNS 링크 */}
         <div className="flex flex-col items-center gap-3">
           <p className="text-lg">
-            📧 Email: <a href="mailto:chzfkchzfk@email.com" className="text-blue-500">chzfkchzfk@gmail.com</a>
+            📧 Email: <a href="mailto:chzfk@naver.com" className="text-blue-500">chzfk@naver.com</a>
           </p>
           <p className="text-lg">
-            🔗 GitHub: <a href="https://github.com/qkrthdud/SY_cra-solo-project.git" className="text-blue-500" target="_blank" rel="noopener noreferrer">github.com/SY_cra-solo-project.git</a>
+            🔗 GitHub: <a href="https://github.com/qkrthdud/sy_vite_react.git" className="text-blue-500" target="_blank" rel="noopener noreferrer">github.com/qkrthdud/sy_vite_react.git</a>
           </p>
         </div>
       </div>
