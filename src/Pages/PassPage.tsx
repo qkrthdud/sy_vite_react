@@ -3,28 +3,75 @@ import '../scss/global.scss';
 
 const PassPage = () => {
   const [currentReward, setCurrentReward] = useState(0); // 탭 상태
-  const [showPopup, setShowPopup] = useState(false);  // 팝업 상태 관리
+  const [showPopup1, setShowPopup1] = useState(false);
+  const [showPopup2, setShowPopup2] = useState(false);
 
   return (
     <div className="passpage">
       {/* 헤더 */}
+      <div className='bg-top'>
       <section className="passpage-header">
-        <img
-          src="/img/passpage/header/header.jpg"
-          alt="패스페이지 헤더"
-          className="passpage-header-image"
-        />
       </section>
 
-      {/* 이벤트01 */}
-      <section className="passpage-event01">
-        <img
-          src="/img/passpage/event01/event01_bg.jpg"
-          alt="패스페이지 챌린지"
-          className="passpage-event01-image"
-        />
-      </section>
+      <div className='passpage-event01 d-flex flex-column align-items-center'>
+  {/* 팝업 열기 버튼 */}
+  <img
+    src="/img/passpage/event01/event01_btn01.png"  // 팝업 열기 이미지
+    alt="팝업 열기"
+    onClick={() => setShowPopup1(true)}  // ✅ 상태 변경 함수 사용
+    className="popup-open-btn pt-5 mt-5"
+    style={{ cursor: 'pointer' }} 
+  />
 
+  {/* 팝업 */}
+  {showPopup1 && (
+    <div 
+      className="position-fixed start-0 top-0 bottom-0 end-0 d-flex justify-content-center align-items-center" 
+      style={{
+        backgroundColor: 'rgba(0, 0, 0, 0.5)', // 배경 흐림 효과
+        zIndex: 10000,
+      }}
+      onClick={() => setShowPopup1(false)} // ✅ 팝업 외부 클릭 시 닫기
+    >
+      <div 
+        onClick={(e) => e.stopPropagation()}  // ✅ 팝업 내부 클릭은 이벤트 전파 중지
+        className="popup-content position-relative"
+      >
+        <img
+          src="https://img.sa.nexon.com/images/event/2025/0403/intro/popup_challenge.jpg"
+          alt="팝업"
+        />
+        {/* 팝업 닫기 버튼 */}
+        <button 
+          onClick={() => setShowPopup1(false)} 
+          className="popup-close-btn position-absolute top-0 end-0 m-3"
+        >
+        </button>
+      </div>
+    </div>
+  )}
+
+      <ul className="cont_tabs reward_tab">
+        <li
+          className={`reward_tab_01 ${currentReward === 0 ? 'active' : ''}`}
+          onClick={() => setCurrentReward(0)}
+        >
+          <a href="#event01_content01" onClick={(e) => e.preventDefault()}>
+            <span className="hide">서든패스 보상</span>
+          </a>
+        </li>
+        <li
+          className={`reward_tab_02 ${currentReward === 1 ? 'active' : ''}`}
+          onClick={() => setCurrentReward(1)}
+        >
+          <a href="#event01_content02" onClick={(e) => e.preventDefault()}>
+            <span className="hide">리부트패스 보상</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+     
       {/* 이벤트02 - 패스샵 */}
       <section className="passpage-event02">
         {/* 배경 이미지 */}
@@ -34,16 +81,16 @@ const PassPage = () => {
           className="passpage-event02-bg"
         />
 
-        {/* 팝업 열기 버튼 (이미지 버튼) */}
+      {/* 팝업 열기 버튼 (이미지 버튼) */}
         <img
           src="/img/passpage/event02/event02_btn01.png"  // 팝업 열기 이미지
           alt="팝업 열기"
-          onClick={() => setShowPopup(true)}  // 팝업을 열도록 설정
-          className="popup-open-btn"
+          onClick={() => setShowPopup2(true)}  // ✅ 이벤트02 전용 팝업 열기
+          className="popup-open-btn2"
         />  
 
         {/* 팝업 */}
-        {showPopup && (
+        {showPopup2 && (
           <div className="popup">
             {/* 배경 흐림 효과 */}
             <div className="popup-background" />            
@@ -54,11 +101,12 @@ const PassPage = () => {
             />
             {/* 팝업 닫기 버튼 (투명 div로 처리) */}
             <div
-              onClick={() => setShowPopup(false)}  // 팝업 닫기
+              onClick={() => setShowPopup2(false)}  // ✅ 이벤트02 전용 팝업 닫기
               className="popup-close-btn"
             />
           </div>
         )}
+
 
         {/* 보상 이미지 */}
         <img
@@ -101,6 +149,7 @@ const PassPage = () => {
         </a>
       </div>
     </div>
+  </div>
   );
 };
 

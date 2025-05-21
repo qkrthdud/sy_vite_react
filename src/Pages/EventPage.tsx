@@ -1,48 +1,49 @@
 import React, { useState } from 'react';
-import LampSet from '../component/LampSet';
-import MonitorSet from '../component/MonitorSet';
-import ButtonSet from '../component/ButtonSet';
-import '../scss/event.scss'; // SCSS 스타일 시트
+import '../scss/event.scss';
 
-const EventPage = () => {
-  const [gameResult, setGameResult] = useState<string>(''); // 게임 결과 상태
-  const [userChoice, setUserChoice] = useState<string>(''); // 사용자 선택 상태
-  const [computerChoice, setComputerChoice] = useState<string>(''); // 컴퓨터 선택 상태
-
-  const choices = ['r', 'p', 's']; // 가위 바위 보 선택지
-
-  // 가위 바위 보 게임의 결과를 계산하는 함수
-  const getResult = (user: string, computer: string): string => {
-    if (user === computer) return '비겼습니다!';
-    if (
-      (user === 'r' && computer === 's') ||
-      (user === 'p' && computer === 'r') ||
-      (user === 's' && computer === 'p')
-    ) {
-      return '이겼어요!';
-    }
-    return '졌어요!';
-  };
-
-  // 게임 시작 (사용자가 선택할 때마다 컴퓨터의 선택도 랜덤으로 결정)
-  const startGame = (userChoice: string) => {
-    const randomChoice = choices[Math.floor(Math.random() * choices.length)];
-    const result = getResult(userChoice, randomChoice);
-    setUserChoice(userChoice);
-    setComputerChoice(randomChoice);
-    setGameResult(result);
-  };
+const EventPage: React.FC = () => {
+  // 예시 상태: 버튼 클릭하면 상태 변경 같은거
+  const [activeLamp, setActiveLamp] = useState<'red' | 'green' | null>(null);
 
   return (
-    <div id="container">
-      <div className="event_01">
-        <LampSet />
-        {/* MonitorSet이 userChoice와 computerChoice props를 받도록 구현되어 있는지 확인하세요 */}
-        <MonitorSet userChoice={userChoice} computerChoice={computerChoice} />
-        {/* ButtonSet이 onRpsChoice prop을 받도록 구현되어 있는지 확인하세요 */}
-        <ButtonSet onRpsChoice={startGame} />
-        {/* 게임 결과 표시 */}
-        <div className="game-result">{gameResult && <p>{gameResult}</p>}</div>
+    <div id="wrap">
+      <div id="container" className="event_01">
+        {/* 램프 세트 */}
+        <div className="lamp_set">
+          <div
+            className="lamp_red"
+            onClick={() => setActiveLamp('red')}
+            style={{ opacity: activeLamp === 'red' ? 1 : 0.5, cursor: 'pointer' }}
+            title="Red Lamp"
+          />
+          <div
+            className="lamp_green"
+            onClick={() => setActiveLamp('green')}
+            style={{ opacity: activeLamp === 'green' ? 1 : 0.5, cursor: 'pointer', position: 'relative' }}
+            title="Green Lamp"
+          >
+            <div className="label" />
+          </div>
+        </div>
+
+        {/* 모니터 셋 */}
+        <div className="monitor_set">
+          <div className="win_01">
+            <div className="circle_bg" />
+            <div className="rsp">
+              {/* 여기 원하는 내용 */}
+              <p style={{ color: '#fff' }}>Response Area</p>
+            </div>
+          </div>
+        </div>
+
+        {/* 버튼 세트 */}
+        <div className="btn_set">
+          <button className="btn_start_light" onClick={() => alert('Start Light 클릭!')} />
+          <button className="btn_s_up" onClick={() => alert('S Up 클릭!')} />
+          <button className="btn_r_up" onClick={() => alert('R Up 클릭!')} />
+          <button className="btn_p_up" onClick={() => alert('P Up 클릭!')} />
+        </div>
       </div>
     </div>
   );
