@@ -47,12 +47,8 @@ a {
   width: 100%;
   min-width: 1200px;
   min-height: 220vh; 
-  height: auto;  // 높이를 자동으로 조정
-  background-color: #1e100a;
-  background-image: url('/img/event/bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  height: 2800px;  // 높이를 자동으로 조정
+  background: url('/img/event/bg.jpg') no-repeat center top;
   position: relative;
   overflow: auto;  // 스크롤 가능
 }
@@ -139,10 +135,11 @@ a {
 
       .rsp {
         position: absolute;
-        top: 171px;
-        left: 50%;
+        top: 180px;
+        left: 47%;
         margin-left: -134px;
       }
+
     }
 
     .btn_set {
@@ -168,6 +165,10 @@ a {
         left: 320px;
       }
 
+      .btn_s_up.active {
+        background-image: url('/img/event/btn_s_light.png');
+      }
+
       .btn_r_up {
         width: 229px;
         height: 180px;
@@ -178,6 +179,10 @@ a {
         left: 549px;
       }
 
+      .btn_r_up.active {
+      background-image: url('/img/event/btn_r_light.png');
+      }
+
       .btn_p_up {
         width: 229px;
         height: 180px;
@@ -186,6 +191,10 @@ a {
         position: absolute;
         top: 0;
         left: 778px;
+      }
+
+      .btn_p_up.active {
+      background-image: url('/img/event/btn_p_light.png');
       }
     }
   }

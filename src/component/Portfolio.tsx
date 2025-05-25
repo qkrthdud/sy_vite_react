@@ -16,12 +16,21 @@ function Portfolio({ id, cls }: PortfolioProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 1" className="w-full h-48 object-cover" />
+            <img src="http://sosul.dothome.co.kr/" alt="Portfolio 1" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold">독립형 페이지</h3>
               <Link to="/portfolio/pass" className="text-blue-500 underline">보러가기 →</Link>
             </div>
           </div>
+
+          <div className="bg-white shadow rounded overflow-hidden">
+            <img src="https://via.placeholder.com/400x300" alt="Portfolio 1" className="w-full h-48 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">리액트로 만든 독립형 페이지</h3>
+              <Link to="/portfolio/pass" className="text-blue-500 underline">보러가기 →</Link>
+            </div>
+          </div>        
+
 
           <div className="bg-white shadow rounded overflow-hidden">
             <img src="https://via.placeholder.com/400x300" alt="Portfolio 2" className="w-full h-48 object-cover" />
