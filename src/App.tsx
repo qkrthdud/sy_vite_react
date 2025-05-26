@@ -7,7 +7,6 @@ import About from './component/About';
 import Skill from './component/Skills';
 
 import Portfolio from './component/Portfolio';
-import Preinterview from './component/Preinterview';
 import Contact from './component/Contact';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -22,7 +21,6 @@ function MainPage() {
       <About id="about" cls="" />
       <Skill id="skill" cls="skills section py-12 bg-gray-50" />
       <Portfolio id="portfolio" cls="" />
-      <Preinterview id="preInterview" datainfo={db.preinterview} cls="vh=100 p-5" />
       <Contact id="contact" cls="vh-100 bg-light" />
     </div>
   );

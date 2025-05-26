@@ -16,15 +16,15 @@ function Portfolio({ id, cls }: PortfolioProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="http://sosul.dothome.co.kr/" alt="Portfolio 1" className="w-full h-48 object-cover" />
+            <img src="/img/portfolioimage/sosul_er.png" alt="Portfolio 1" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold">독립형 페이지</h3>
-              <Link to="/portfolio/pass" className="text-blue-500 underline">보러가기 →</Link>
+              <Link to="http://projectsosul.dothome.co.kr/" className="text-blue-500 underline">보러가기 →</Link>
             </div>
           </div>
 
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 1" className="w-full h-48 object-cover" />
+            <img src="/img/portfolioimage/sosul_er.png" alt="Portfolio 1" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold">리액트로 만든 독립형 페이지</h3>
               <Link to="/portfolio/pass" className="text-blue-500 underline">보러가기 →</Link>
@@ -33,7 +33,7 @@ function Portfolio({ id, cls }: PortfolioProps) {
 
 
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 2" className="w-full h-48 object-cover" />
+            <img src="/img/portfolioimage/sosul_er.png" alt="Portfolio 2" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold">플랫폼 프로젝트</h3>
               <a href="https://i-web.kr/green20/" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">보러가기 →</a>
@@ -41,7 +41,7 @@ function Portfolio({ id, cls }: PortfolioProps) {
           </div>
 
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 3" className="w-full h-48 object-cover" />
+            <img src="/img/portfolioimage/pass.png" alt="Portfolio 3" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold">서든어택 시즌패스 클론</h3>
               <Link to="/portfolio/pass" className="text-blue-500 underline">보러가기 →</Link>
@@ -49,15 +49,15 @@ function Portfolio({ id, cls }: PortfolioProps) {
           </div>
 
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 4" className="w-full h-48 object-cover" />
+            <img src="/img/portfolioimage/rsp.png" alt="Portfolio 4" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold">이벤트 페이지</h3>
               <Link to="/portfolio/event" className="text-blue-500 underline">보러가기 →</Link>
             </div>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 4" className="w-full h-48 object-cover" />
-            <div className="p-4">
+          <div className="bg-dark shadow rounded overflow-hidden">
+            <img src="https://img.dekaron.co.kr/responsive/assets/image/main/logo.png?v=202504250002" alt="Portfolio 4" className="w-full h-48 object-cover" />
+            <div className="p-4 bg-white">
               <h3 className="text-xl font-semibold">그누보드</h3>
               <Link to="/portfolio/event" className="text-blue-500 underline">보러가기 →</Link>
             </div>

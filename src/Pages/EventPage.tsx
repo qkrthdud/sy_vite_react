@@ -24,7 +24,7 @@ const intervalRef = useRef<NodeJS.Timeout | null>(null); // ✅ 여기 추가
 useEffect(() => {
   if(!gameStart) return;
 
-  var imageNo = 0;
+  let imageNo = 0;
   intervalRef.current = setInterval(() => {
     imageNo ++;
     if(imageNo == 3){
@@ -42,28 +42,29 @@ useEffect(() => {
 }, [gameStart]);
 
 useEffect(() => {
-    if(rpsResult == '' || gameResult) return;
+    if (rpsResult === '' || gameResult || !gameStart) return;
 
+    
     console.log(rpsResult)
     if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
-
+      if(!gameStart) return;
       console.log('결과:' ,rpsList[index])
       console.log('내가 클릭한 가위바위보:', rpsResult)
-    if(rpsList[index] == rpsResult){
-      alert('비겼슴니다')
+      if(rpsList[index] == rpsResult){
+      alert('비겼다!')
       setGamestart(false);
       setTimeout(() => {
         setGamestart(true);
-      }); // 10ms 정도면 충분
+      });
     }
     else if((rpsResult == 'p' && rpsList[index] == 'r') || (rpsResult == 's' && rpsList[index] == 'p') || (rpsResult == 'r' && rpsList[index] == 's')) {
-      alert('이겼슴니다')
+      alert('이겼다!')
       setGameResult(true);
     }
     else {
-      alert('졌슴니다')
+      alert('졌다!')
       setGameResult(true);
     }
 
