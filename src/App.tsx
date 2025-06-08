@@ -4,7 +4,6 @@ import db from './db/db.json';
 import Hd from './component/Hd';
 import Banner from './component/Banner';
 import About from './component/About';
-import Skill from './component/Skills';
 
 import Portfolio from './component/Portfolio';
 import Contact from './component/Contact';
@@ -19,7 +18,6 @@ function MainPage() {
       <Hd datainfo={db.navi} id="hd" cls="fixed-top border-bottom bg-white" />
       <Banner datainfo={db.mainSlider} id="mainSlider" cls="vh-100" />
       <About id="about" cls="" />
-      <Skill id="skill" cls="skills section py-12 bg-gray-50" />
       <Portfolio id="portfolio" cls="" />
       <Contact id="contact" cls="vh-100 bg-light" />
     </div>

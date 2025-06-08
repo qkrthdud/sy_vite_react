@@ -15,13 +15,12 @@ const PassPage = () => {
 
       <div className='passpage-event01 d-flex flex-column align-items-center'>
   {/* 팝업 열기 버튼 */}
-  <img
-    src="/img/passpage/event01/event01_btn01.png"  // 팝업 열기 이미지
-    alt="팝업 열기"
-    onClick={() => setShowPopup1(true)}  // ✅ 상태 변경 함수 사용
-    className="popup-open-btn pt-5 mt-5"
-    style={{ cursor: 'pointer' }} 
-  />
+    <img
+      src="/img/passpage/event01/event01_btn01.png"
+      alt="팝업 열기"
+      onClick={() => setShowPopup1(true)}
+      className="pt-5 mt-[4rem] cursor-pointer"
+    />
 
   {/* 팝업 */}
   {showPopup1 && (
@@ -34,7 +33,7 @@ const PassPage = () => {
       onClick={() => setShowPopup1(false)} // ✅ 팝업 외부 클릭 시 닫기
     >
       <div 
-        onClick={(e) => e.stopPropagation()}  // ✅ 팝업 내부 클릭은 이벤트 전파 중지
+        onClick={(e) => e.stopPropagation()} 
         className="popup-content position-relative"
       >
         <img
@@ -51,24 +50,23 @@ const PassPage = () => {
     </div>
   )}
 
-      <ul className="cont_tabs reward_tab">
+      <ul className="flex mt-8">
         <li
           className={`reward_tab_01 ${currentReward === 0 ? 'active' : ''}`}
           onClick={() => setCurrentReward(0)}
         >
           <a href="#event01_content01" onClick={(e) => e.preventDefault()}>
-            <span className="hide">서든패스 보상</span>
-          </a>
-        </li>
-        <li
-          className={`reward_tab_02 ${currentReward === 1 ? 'active' : ''}`}
-          onClick={() => setCurrentReward(1)}
-        >
-          <a href="#event01_content02" onClick={(e) => e.preventDefault()}>
-            <span className="hide">리부트패스 보상</span>
+            <img src="/img/passpage/event01/event01_tab1.png" alt="서든패스 보상" />
           </a>
         </li>
       </ul>
+      <img
+        src={
+          '/img/passpage/event01/tab1/event1_tab1_1.png'  // 첫 번째 보상 이미지
+          }
+        alt="보상 이미지"
+      className="reward-image"
+        />
     </div>
 
      
