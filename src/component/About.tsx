@@ -9,14 +9,17 @@ const AboutSection: React.FC<AboutSectionProps> = ({ id , cls  }) => {
       {/* Section Title */}
       <div className="container mx-auto text-center mb-12" data-aos="fade-up">
         <h2 className="text-4xl font-bold">About</h2>
-        <p className="mt-4 text-gray-600">
-          안녕하세요! 저는 <strong>React</strong>를 주로 사용하는 프론트엔드 개발자입니다.  
-          사용자 경험을 중요하게 생각하며, 최신 기술을 학습하고 적용하는 것을 좋아합니다.  
-          <strong>React, TypeScript, 그누보드</strong>를 활용한 프로젝트를 진행하였습니다.
+        <p className="mt-4 text-gray-600 leading-relaxed">
+          안녕하세요! 저는 <strong>React</strong>를 중심으로 사용자 중심의 UI를 구현하는 <strong>프론트엔드 개발자</strong>가 되고싶은 박소영입니다.  
+          <br />
+          빠르게 변화하는 기술 흐름 속에서 <strong>최신 프론트엔드 기술</strong>을 학습하고 프로젝트에 적용하는 것을 즐깁니다.
+          <br />
+          <strong>React</strong>, <strong>TypeScript</strong>, <strong>그누보드</strong> 등을 활용하여 다양한 웹 프로젝트를 직접 설계하고 개발해왔습니다.
         </p>
       </div>
     </section>
-  );
+
+      );
 };
 
 export default AboutSection;

@@ -16,52 +16,83 @@ function Portfolio({ id, cls }: PortfolioProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="projecrsosul.dothome.co.kr/" alt="Portfolio 1" className="w-full h-48 object-cover" />
+            <div
+              className="w-full h-48 bg-cover bg-center"
+              style={{ backgroundImage: "url('/img/portfolio1.jpg')" }}
+            ></div>
             <div className="p-4">
-              <h3 className="text-xl font-semibold">독립형 페이지</h3>
-              <Link to="/portfolio/pass" className="text-blue-500 underline">보러가기 →</Link>
+              <h3 className="text-xl font-semibold">독립형 프로젝트</h3>
+              <Link to="https://team-sosul.vercel.app/" className="text-blue-500 underline hover:text-blue-700">
+                보러가기 →
+              </Link>
             </div>
-          </div>
+        </div>
 
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 1" className="w-full h-48 object-cover" />
+            <div
+              className="w-full h-48 bg-cover bg-center"
+              style={{ backgroundImage: "url('/img/portfolio2.png')" }}
+            ></div>
             <div className="p-4">
-              <h3 className="text-xl font-semibold">리액트로 만든 독립형 페이지</h3>
-              <Link to="/portfolio/pass" className="text-blue-500 underline">보러가기 →</Link>
+              <h3 className="text-xl font-semibold">React로 만든 독립형 프로젝트</h3>
+            <Link to="https://team-sosul-react.vercel.app/" className="text-blue-500 underline hover:text-blue-700">
+              보러가기 →
+            </Link>
             </div>
-          </div>        
+        </div>   
 
 
           <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 2" className="w-full h-48 object-cover" />
+            <div
+              className="w-full h-48 bg-cover bg-center"
+              style={{ backgroundImage: "url('/img/portfolio3.png')" }}
+            ></div>
             <div className="p-4">
               <h3 className="text-xl font-semibold">플랫폼 프로젝트</h3>
-              <a href="https://i-web.kr/green20/" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">보러가기 →</a>
+            <Link to="https://i-web.kr/green20/" className="text-blue-500 underline hover:text-blue-700">
+              보러가기 →
+            </Link>
             </div>
-          </div>
+        </div>
 
-          <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 3" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">서든어택 시즌패스 클론</h3>
-              <Link to="/portfolio/pass" className="text-blue-500 underline">보러가기 →</Link>
-            </div>
+        <div className="bg-white shadow rounded overflow-hidden">
+          <div
+            className="w-full h-48 bg-cover bg-center"
+            style={{ backgroundImage: "url('/img/portfolio4.png')" }}
+          ></div>
+          <div className="p-4">
+            <h3 className="text-xl font-semibold">서든어택 시즌패스 클론</h3>
+            <Link to="/portfolio/pass" className="text-blue-500 underline hover:text-blue-700">
+              보러가기 →
+            </Link>
           </div>
+        </div>
 
-          <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 4" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">이벤트 페이지</h3>
-              <Link to="/portfolio/event" className="text-blue-500 underline">보러가기 →</Link>
-            </div>
+        <div className="bg-white shadow rounded overflow-hidden">
+          <div
+            className="w-full h-48 bg-cover bg-center"
+            style={{ backgroundImage: "url('/img/portfolio5.png')" }}
+          ></div>
+          <div className="p-4">
+            <h3 className="text-xl font-semibold">이벤트 페이지</h3>
+            <Link to="/portfolio/event" className="text-blue-500 underline hover:text-blue-700">
+              보러가기 →
+            </Link>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
-            <img src="https://via.placeholder.com/400x300" alt="Portfolio 4" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">그누보드</h3>
-              <Link to="/portfolio/event" className="text-blue-500 underline">보러가기 →</Link>
-            </div>
+        </div>
+
+        <div className="bg-white shadow rounded overflow-hidden">
+          <div
+            className="w-full h-48 bg-cover bg-center"
+            style={{ backgroundImage: "url('/img/portfolio6.png')" }}
+          ></div>
+          <div className="p-4">
+            <h3 className="text-xl font-semibold">그누보드</h3>
+            <Link to="http://chzfk.dothome.co.kr/" className="text-blue-500 underline hover:text-blue-700">
+              보러가기 →
+            </Link>
           </div>
+        </div>
         </div>
       </div>
     </section>

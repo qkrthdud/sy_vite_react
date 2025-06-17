@@ -16,10 +16,14 @@ function MainPage() {
   return (
     <div className="syproject">
       <Hd datainfo={db.navi} id="hd" cls="fixed-top border-bottom bg-white" />
-      <Banner datainfo={db.mainSlider} id="mainSlider" cls="vh-100" />
+      <Banner
+          datainfo={db.mainSlider}
+          id="mainSlider"
+          cls="relative w-full h-[40vw] overflow-hidden" 
+        />
       <About id="about" cls="" />
       <Portfolio id="portfolio" cls="" />
-      <Contact id="contact" cls="vh-100 bg-light" />
+      <Contact id="contact" cls="bg-light" />
     </div>
   );
 }
