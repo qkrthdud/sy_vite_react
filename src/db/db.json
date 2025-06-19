@@ -3,34 +3,33 @@
       {
         "id": "home",
         "label": "홈",
-        "path": "#home"
+        "path": "#",
+        "icon" : "bi bi-house navicon"
       },
       {
         "id": "about",
         "label": "소개",
-        "path": "#about"
+        "path": "#about",
+        "icon" : "bi bi-person navicon"
       },
       {
         "id": "portfolioMain",
         "label": "포트폴리오",
-        "path": "#portfolioMain"
-      },
-      {
-        "id": "portfolio",
-        "label": "기술 스택",
-        "path": "#portfolio"
+        "path": "#portfolio",
+        "icon" : "bi bi-file-earmark-text navicon"
       },
       {
         "id": "contact",
         "label": "연락처",
-        "path": "#contact"
+        "path": "#contact",
+        "icon" : "bi bi-envelope navicon"
       }
     ],
       "mainSlider": [
             {
             "id": 1,
             "title": "팀 독립형 프로젝트",
-            "description": "최적화된 웹 성능으로 빠르고 부드러운 사용자 경험을 제공합니다.",
+            "description": "최적화된 웹 성능으로 빠르고 부드러운 사용자 경험 제공",
             "video": {
               "desktop": "./img/video/main_video.mp4",
               "mobile": "./img/video/main_video.mp4"
@@ -39,7 +38,7 @@
             {
             "id": 2,
             "title": "팀 플랫폼 프로젝트",
-            "description": "어떤 디바이스에서도 완벽한 사용자 경험을 위한 반응형 디자인 구현.",
+            "description": "어떤 디바이스에서도 완벽한 사용자 경험을 위한 반응형 디자인 구현",
             "image": {
                 "desktop": "./img/banner1.jpg",
                 "mobile": "./img/banner1.jpg"
@@ -48,7 +47,7 @@
             {
             "id": 3,
             "title": "최신 프론트엔드 기술",
-            "description": "React, TypeScript, Tailwind CSS 등 최신 기술 스택을 활용한 개발.",
+            "description": "React, TypeScript, Tailwind CSS 등 최신 기술 스택을 활용한 개발",
             "image": {
                 "desktop": "./img/banner2.png",
                 "mobile": "./img/banner2.png"

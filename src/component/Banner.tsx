@@ -64,8 +64,8 @@ const Banner: React.FC<BannerProps> = ({ id, datainfo, cls }) => {
                         )}
 
                         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white bg-black/40">
-                            <h2 className="text-3xl font-bold mb-2">{v.title}</h2>
-                            <p className="text-lg mb-4">{v.description}</p>
+                            <h2 className="text-4xl font-bold mb-5">{v.title}</h2>
+                            <p className="text-xl mb-4">{v.description}</p>
                             {v.link && (
                                 <a
                                     href={v.link}
