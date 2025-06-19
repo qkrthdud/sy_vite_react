@@ -247,3 +247,55 @@ a{
 .reward-tab-right {
   left: 50%;
 }
+
+.effect {
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 60%;
+    bottom: 0;
+    background-color: rgba(251, 113, 133, 0.2);
+    animation: magicPen 3s ease-in-out 1 forwards;
+    z-index: 0;
+  }
+}
+
+@keyframes magicPen {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  40% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+
+.potlink {
+  color: #777777 !important;             // 기본 올리브 그린
+  transition: all 0.25s ease;
+  font-weight: 600;
+
+  &:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+  }
+}
+.potbg{
+  background-color: #FAF6F3;
+}
