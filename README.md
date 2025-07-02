@@ -21,7 +21,7 @@ React 기반의 인터랙션과 사용자 흐름 설계에 관심이 많으며,
 
 ## 📂 설치 및 실행
 # 1. 저장소 클론
-git clone https://github.com/your-username/sosul_react.git
+https://github.com/your-username/sosul_react.git](https://github.com/qkrthdud/team_sosul_react.git)
 # 2. 패키지 설치
 npm install
 # 3. 개발 서버 실행
