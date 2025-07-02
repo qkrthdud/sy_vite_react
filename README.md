@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+## 👩🏻‍💻 About Me
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**박소영 | Frontend Developer**  
+React 기반의 인터랙션과 사용자 흐름 설계에 관심이 많으며,  
+기획부터 배포까지의 모든 과정을 경험한 프로젝트입니다.
 
-Currently, two official plugins are available:
+## 🔧 기술 스택 및 개발 환경
+- **Frontend:** React, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **State Management:** React Hooks
+- **API & DB:** Supabase (PostgreSQL), supabase-js, Axios
+- **Routing:** React Router DOM
+- **환경 변수:** dotenv
+- **아이콘:** react-icons
+- **배포:** Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 주요 기능
+- 반응형 UI 구현 및 접근성 고려
+- Vercel을 통한 CI/CD 자동 배포
+- GitHub 협업/버전 관리
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 📂 설치 및 실행
+# 1. 저장소 클론
+git clone https://github.com/your-username/sosul_react.git
+# 2. 패키지 설치
+npm install
+# 3. 개발 서버 실행
+npm run dev
