@@ -48,7 +48,7 @@ function Portfolio({ id, cls }: PortfolioProps) {
               style={{ backgroundImage: "url('/img/portfolio3.png')" }}
             ></div>
             <div className="p-4 potbg">
-              <h3 className="text-xl font-bold">플랫폼 침 프로젝트 SOSUL_ER</h3>
+              <h3 className="text-xl font-bold">플랫폼 팀 프로젝트 SOSUL_ER</h3>
               <a href="https://i-web.kr/green20/" className="potlink" target="_blank" rel="noopener noreferrer">
                 보러가기 →
               </a>
@@ -74,7 +74,7 @@ function Portfolio({ id, cls }: PortfolioProps) {
             style={{ backgroundImage: "url('/img/portfolio5.png')" }}
           ></div>
           <div className="p-4 potbg">
-            <h3 className="text-xl font-bold">직접 기획했었던 이벤트 페이지</h3>
+            <h3 className="text-xl font-bold">직접 기획했었던 가위바위보 이벤트</h3>
             <Link to="/portfolio/event" className="potlink">
               보러가기 →
             </Link>
