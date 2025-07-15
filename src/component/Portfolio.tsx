@@ -22,7 +22,7 @@ function Portfolio({ id, cls }: PortfolioProps) {
             ></div>
             <div className="p-4 potbg">
               <h3 className="text-xl font-bold">독립형 팀 프로젝트 SOSUL</h3>
-              <a href="https://team-sosul.vercel.app/" className="potlink" target="_blank" rel="noopener noreferrer">
+              <a href="http://sosul.dothome.co.kr/" className="potlink" target="_blank" rel="noopener noreferrer">
                 보러가기 →
               </a>
             </div>
